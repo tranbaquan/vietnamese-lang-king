@@ -1,0 +1,68 @@
+$color-gray-l1: #929292;
+$color-gray-l2: #A1A1A1;
+$color-gray-l3: #B1B1B1;
+$color-gray-l4: #C0C0C0;
+$color-gray-l5: #D0D0D0;
+$color-gray-l6: #E0E0E0;
+$color-gray-l7: #EFEFEF;
+
+$color-green-l1: #2CB729;
+$color-green-l2: #30C82D;
+$color-green-l3: #3AD237;
+$color-green-l4: #4AD548;
+$color-green-l5: #5BD959;
+$color-green-l6: #6BDD69;
+$color-green-l7: #7CE17A;
+
+
+.nav {
+  height: 100px;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: $color-gray-l5;
+  box-shadow: 1px 2px 5px $color-gray-l5;
+
+  .title {
+    margin: auto;
+    font-size: 52px;
+    font-weight: bold;
+    color: $color-green-l3;
+  }
+}
+
+.container {
+  padding: 0 100px;
+  display: flex;
+
+  .center {
+    padding: 30px 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    input {
+      height: 32px;
+      width: 250px;
+      padding: 6px 12px;
+    }
+
+    button {
+      height: 32px;
+      width: 100px;
+      padding: 6px 12px;
+      border: $color-gray-l5;
+      background-color: $color-green-l7;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-green-l1;
+      }
+    }
+  }
+}
